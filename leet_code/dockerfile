@@ -1,0 +1,9 @@
+#getting base image ubuntu
+FROM python:3.8
+
+MAINTAINER kamal pratap <kamalpratap1985@gmail.com>
+
+WORKDIR /usr/src/app
+COPY . .
+CMD ["basicProgram.py"]
+ENTRYPOINT ["python3"]
